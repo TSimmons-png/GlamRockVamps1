@@ -1,2 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */  
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img {vertical-align: middle;} 
