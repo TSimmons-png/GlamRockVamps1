@@ -15,7 +15,7 @@
     <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="band.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
     <a href="tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -29,13 +29,44 @@
 </div> 
 
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
   <a href="band.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="merch.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div> 
 
+<p>Hello! If you’d like to work together, you can contact us here about a sponsorship, collaboration, or commission.
 
+This is form is for business inquires only please!</p>
+<br>   
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your first and last name. . .">
+
+   
+  <label for="eadsress">Email Address</label>
+  <input type="text" id="eadsress" name="emailadsress" placeholder="Your email address.."> 
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+       <option value="europe">Europe</option> 
+    <option value="asia">Asia</option>
+     <option value="africa">Africa</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+       <option value="southamerica">South America</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write your inquiry.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
 
 

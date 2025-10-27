@@ -16,7 +16,7 @@
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="band.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
     <a href="tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -31,6 +31,7 @@
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
   <a href="band.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -40,9 +41,34 @@
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <img src="images/album_cover.jpg" alt="Album Cover" width="100%" height="725px">
-  
+  <h1><i>CHECK OUT THIER NEW ALBUM!!(NOW AVAILABLE ON VINYL)</i></h1> 
+  <br>
+  <img src="images/album_cover.jpg" alt="Album Cover" width="100%" height="730px">
+  <br> 
+<div class="tooltip">Sneak peak instrumental below!
+  <span class="tooltiptext">(*Music actually by Ivan Selivanov from Pixabay)</span>
+</div>
+<br>
+<br> 
+<audio controls>
+  <source src="sample.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br> 
+<br> 
 
+
+  <h2><i>TOUR DATES ANNOUNCED!</i></h2
+  <br>
+  <img src="images/tour_dates.jpg" alt="Tour Dates" width="545" height="600px">
+
+<h1>Drag and Drop API</h1>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+<br>
+<img id="img1" src="images/logo.png" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="125">
 
 
 
