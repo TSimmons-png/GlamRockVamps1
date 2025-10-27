@@ -63,17 +63,16 @@ input[type=submit]:hover {
   visibility: visible;
 } 
 
-<style>
+
 #div1 {
   width: 350px;
-  height: 70px;
+  height: 125px;
   padding: 10px;
   border: 1px solid #575353;
 }
-</style>
-<script>
+
 function dragstartHandler(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function dragoverHandler(ev) {
@@ -85,4 +84,3 @@ function dropHandler(ev) {
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 } 
-</style>
